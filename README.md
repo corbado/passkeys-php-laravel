@@ -1,12 +1,12 @@
 <img width="1070" alt="GitHub Repo Cover" src="https://github.com/corbado/corbado-php/assets/18458907/aa4f9df6-980b-4b24-bb2f-d71c0f480971">
 
-# Fullstack PHP Laravel Passkey Example App
+# PHP Laravel Passkeys Example Application
 
-This is a sample implementation of
-the [Corbado web-js](https://github.com/corbado/javascript/tree/develop/packages/web-js) package
-and [Corbado PHP SDK](https://github.com/corbado/corbado-php)
-being integrated into a web
-application built with PHP Laravel.
+This is a sample implemention of the [Corbado passkeys-first authentication solution](https://www.corbado.com) using
+PHP Laravel. The following packages are being used:
+
+- [Corbado web-js](https://github.com/corbado/javascript/tree/develop/packages/web-js)
+- [Corbado PHP SDK](https://github.com/corbado/corbado-php)
 
 ## File structure
 
@@ -29,7 +29,7 @@ You need to have [PHP](https://www.php.net/downloads) and [Composer](https://get
 
 ### Configure environment variables
 
-Use the values you obtained in [Prerequisites](#prerequisites) to configure the following variables inside an `.env`
+Use the values you obtained in [Prerequisites](#prerequisites) to configure the following variables inside a `.env`
 file you create in the root folder of this project:
 
 ```sh
@@ -38,8 +38,6 @@ CORBADO_API_SECRET=corbado1_XXX
 CORBADO_FRONTEND_API=https://${CORBADO_PROJECT_ID}.frontendapi.cloud.corbado.io
 CORBADO_BACKEND_API=https://backendapi.cloud.corbado.io
 ```
-
-You can find an example in the `.env.example` file.
 
 ## Usage
 
@@ -58,3 +56,9 @@ Finally, you can run the project locally with
 ```sh
 php artisan serve
 ```
+
+## Passkeys support
+
+- Community for Developer Support: https://bit.ly/passkeys-community
+- Passkeys Debugger: https://www.passkeys-debugger.io/
+- Passkey Subreddit: https://www.reddit.com/r/passkey/
