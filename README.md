@@ -1,6 +1,6 @@
 <img width="1070" alt="GitHub Repo Cover" src="https://github.com/corbado/corbado-php/assets/18458907/aa4f9df6-980b-4b24-bb2f-d71c0f480971">
 
-# Fullstack Express Passkey Example App
+# Fullstack PHP Laravel Passkey Example App
 
 This is a sample implementation of
 the [Corbado web-js](https://github.com/corbado/javascript/tree/develop/packages/web-js) package

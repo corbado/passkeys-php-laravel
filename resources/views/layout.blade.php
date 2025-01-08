@@ -12,7 +12,6 @@
         window.corbadoLoadPromise = Corbado.load({
             projectId: '{{ env('CORBADO_PROJECT_ID') }}',
             darkMode: "on",
-            setShortSessionCookie: true,
             theme: "cbo-custom-styles",
             customTranslations: {
                 en: {
