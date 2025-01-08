@@ -120,7 +120,7 @@
             />
             Github
         </a>
-        <a href="https://docs.corbado.com/corbado-complete/fullstack-integration/next-js" target="_blank">
+        <a href="https://docs.corbado.com/corbado-complete/frontend-integration/vanilla-js" target="_blank">
             <img
                     src="/documents-icon.svg"
                     alt="Documentation icon"

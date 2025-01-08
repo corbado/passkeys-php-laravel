@@ -2,7 +2,7 @@
 
 # PHP Laravel Passkeys Example Application
 
-This is a sample implemention of the [Corbado passkeys-first authentication solution](https://www.corbado.com) using
+This is a sample implementation of the [Corbado passkeys-first authentication solution](https://www.corbado.com) using
 PHP Laravel. The following packages are being used:
 
 - [Corbado web-js](https://github.com/corbado/javascript/tree/develop/packages/web-js)
