@@ -22,10 +22,7 @@ abstract class Controller
      */
     public function __construct()
     {
-        $config = new Config(env('CORBADO_PROJECT_ID'), env('CORBADO_API_SECRET'), env('CORBADO_FRONTEND_API'), env('CORBADO_BACKEND_API'));
-        $config->setJwksCachePool(new FilesystemAdapter());
-
-        $this->sdk = new SDK($config);
+        $this->sdk = getSdk();
     }
 
     protected function getAuthenticatedUserFromCookie(): ?UserEntity

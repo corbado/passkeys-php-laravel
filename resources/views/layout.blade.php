@@ -10,7 +10,7 @@
     <script src="https://unpkg.com/@corbado/web-js@2/dist/bundle/index.js"></script>
     <script>
         window.corbadoLoadPromise = Corbado.load({
-            projectId: '{{ env('CORBADO_PROJECT_ID') }}',
+            projectId: "{{ env('CORBADO_PROJECT_ID') }}",
             darkMode: "on",
             theme: "cbo-custom-styles",
             customTranslations: {
@@ -132,7 +132,7 @@
     </footer>
 </main>
 <script>
-    const logout = document.getElementById("logout")?.addEventListener("click", async function() {
+    document.getElementById("logout")?.addEventListener("click", async function() {
         await window.corbadoLoadPromise;
         await Corbado.logout();
         window.location.href = "/";
