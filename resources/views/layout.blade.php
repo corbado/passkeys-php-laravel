@@ -6,8 +6,8 @@
     <title>Corbado Example</title>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/@corbado/web-js@2/dist/bundle/index.css" />
-    <script src="https://unpkg.com/@corbado/web-js@2/dist/bundle/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/@corbado/web-js@3/dist/bundle/index.css" />
+    <script src="https://unpkg.com/@corbado/web-js@3.0.0/dist/bundle/index.js"></script>
     <script>
         window.corbadoLoadPromise = Corbado.load({
             projectId: "{{ env('CORBADO_PROJECT_ID') }}",
