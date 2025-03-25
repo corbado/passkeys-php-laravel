@@ -8,6 +8,8 @@ PHP Laravel. The following packages are being used:
 - [Corbado web-js](https://github.com/corbado/javascript/tree/develop/packages/web-js)
 - [Corbado PHP SDK](https://github.com/corbado/corbado-php)
 
+[![integration-guides](https://github.com/user-attachments/assets/7859201b-a345-4b68-b336-6e2edcc6577b)](https://app.corbado.com/integration-guides/php-laravel)
+
 ## File structure
 
 - `app/Http/Controllers`: contains the controllers for handling HTTP requests
