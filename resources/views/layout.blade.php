@@ -7,7 +7,8 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://unpkg.com/@corbado/web-js@3/dist/bundle/index.css" />
-    <script src="https://unpkg.com/@corbado/web-js@3.0.0/dist/bundle/index.js"></script>
+    <script src="https://unpkg.com/@corbado/web-js@3.1.0/dist/bundle/index.js"></script>
+    <script src="https://unpkg.com/@corbado/shared-util@1/dist/bundle/index.js"></script>
     <script>
         window.corbadoLoadPromise = Corbado.load({
             projectId: "{{ env('CORBADO_PROJECT_ID') }}",
@@ -45,6 +46,18 @@
                     }
                 }
             }
+        });
+    </script>
+
+    <script>
+        CorbadoSharedUtil.sendEvent({
+            type: CorbadoSharedUtil.TelemetryEventType.EXAMPLE_APPLICATION_OPENED,
+            payload: {
+                exampleName: 'corbado/js-vanillajs-php-laravel',
+            },
+            sdkVersion: '3.1.0',
+            sdkName: 'Javascript SDK',
+            identifier: "{{ env('CORBADO_PROJECT_ID') }}",
         });
     </script>
 </head>
