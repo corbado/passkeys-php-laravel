@@ -50,10 +50,14 @@
     </script>
 
     <script>
+        if({{env('CORBADO_TELEMETRY_DISBALED')}} === true){
+            return;
+        }
+
         CorbadoSharedUtil.sendEvent({
             type: CorbadoSharedUtil.TelemetryEventType.EXAMPLE_APPLICATION_OPENED,
             payload: {
-                exampleName: 'corbado/js-vanillajs-php-laravel',
+                exampleName: 'corbado/examples/js-vanilljs-php-laravel',
             },
             sdkVersion: '3.1.0',
             sdkName: 'Javascript SDK',
