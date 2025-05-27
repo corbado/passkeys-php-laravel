@@ -7,7 +7,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://unpkg.com/@corbado/web-js@3/dist/bundle/index.css" />
-    <script src="https://unpkg.com/@corbado/web-js@3.1.0/dist/bundle/index.js"></script>
+    <script src="https://unpkg.com/@corbado/web-js@3.1.1/dist/bundle/index.js"></script>
     <script src="https://unpkg.com/@corbado/shared-util@1/dist/bundle/index.js"></script>
     <script>
         window.corbadoLoadPromise = Corbado.load({
@@ -45,21 +45,23 @@
                         field_status: "Status of Passkey: "
                     }
                 }
-            }
-        });
+            },
+        },{{ env('CORBADO_TELEMETRY_DISABLED') === true ? 'false' : 'true' }});
     </script>
 
+    @if(env('CORBADO_TELEMETRY_DISABLED') !== true)
     <script>
         CorbadoSharedUtil.sendEvent({
             type: CorbadoSharedUtil.TelemetryEventType.EXAMPLE_APPLICATION_OPENED,
             payload: {
-                exampleName: 'corbado/js-vanillajs-php-laravel',
+                exampleName: 'corbado/passkeys-php-laravel',
             },
             sdkVersion: '3.1.0',
-            sdkName: 'Javascript SDK',
+            sdkName: 'React SDK',
             identifier: "{{ env('CORBADO_PROJECT_ID') }}",
         });
     </script>
+    @endif
 </head>
 <body>
 <div>
