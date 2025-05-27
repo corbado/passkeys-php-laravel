@@ -46,11 +46,10 @@
                     }
                 }
             },
-            telemetry: {{ env('CORBADO_TELEMETRY_DISABLED', false) !== true }}
-        });
+        },{{ env('CORBADO_TELEMETRY_DISABLED') === true ? 'false' : 'true' }});
     </script>
 
-    @if(env('CORBADO_TELEMETRY_DISABLED', false) !== true)
+    @if(env('CORBADO_TELEMETRY_DISABLED') !== true)
     <script>
         CorbadoSharedUtil.sendEvent({
             type: CorbadoSharedUtil.TelemetryEventType.EXAMPLE_APPLICATION_OPENED,
