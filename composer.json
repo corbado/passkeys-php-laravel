@@ -7,7 +7,7 @@
     "require": {
         "php": "^8.2",
         "corbado/php-sdk": "^4.3",
-        "laravel/framework": "^11.9",
+        "laravel/framework": "^11.31.0",
         "laravel/tinker": "^2.9",
         "symfony/cache": "^7.1"
     },
