@@ -53,28 +53,11 @@ composer install
 
 to install all dependencies.
 
-Then generate the Laravel application key and run the database migrations:
-
-```sh
-php artisan key:generate
-php artisan migrate
-```
-
 Finally, you can run the project locally with
 
 ```sh
 php artisan serve
 ```
-
-### Why the Laravel application key is required
-
-Laravel uses the `APP_KEY` (set by `php artisan key:generate`) to secure encrypted data. This key is critical for:
-
-- Encrypting and decrypting cookies and session data
-- Generating/validating signed URLs and CSRF tokens
-- Protecting other framework-encrypted payloads
-
-Without a valid `APP_KEY`, the framework cannot safely encrypt or validate data, which can cause authentication/session issues and security risks.
 
 ## Passkeys support
 
