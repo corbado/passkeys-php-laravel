@@ -9,8 +9,7 @@ class ApiController extends Controller
 {
     public function secret(Request $request): JsonResponse
     {
-        $corbadoUser = $this->getAuthenticatedUserFromCookie();
-        $corbadoUser ??= $this->getAuthenticatedUserFromAuthorizationHeader($request);
+        $corbadoUser = $this->getAuthenticatedUserFromAuthorizationHeader($request);
         
         if ($corbadoUser !== null) {
             return response()->json([
